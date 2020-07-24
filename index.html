@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grade Calculator</title>
+    <!-- Compiled and minified CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"
+    />
+
+    <!-- Compiled and minified JavaScript -->
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"
+      defer
+    ></script>
+
+    <!-- Designer CSS-->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Developer JavaScript code -->
+    <script src="script.js" defer></script>
+  </head>
+  <body class="body">
+    <!-- Video Background -->
+    <div class="video-container">
+      <div class="color-overlay">
+        <video autoplay loop muted>
+          <source src="backgroundVideo.mp4" />
+        </video>
+      </div>
+    </div>
+
+    <!-- Calculator -->
+    <div class="container-box">
+      <div class="calculator">
+        <div class="input-field">
+          <input
+            type="text"
+            id="math"
+            class="white-text"
+            placeholder="math marks"
+          />
+          <input
+            type="text"
+            id="physics"
+            class="white-text"
+            placeholder="physics marks"
+          />
+          <input
+            type="text"
+            id="electronics"
+            class="white-text"
+            placeholder="electronics marks"
+          />
+          <input
+            type="text"
+            id="computer"
+            class="white-text"
+            placeholder="computer marks"
+          />
+          <input
+            type="text"
+            id="java"
+            class="white-text"
+            placeholder="java marks"
+          />
+          <input
+            type="text"
+            id="python"
+            class="white-text"
+            placeholder="python marks"
+          />
+        </div>
+        <div class="button">
+          <input
+            id="button"
+            type="button"
+            class="btn indigo darken-4 z-depth-2 white-text button"
+            name="button"
+            value="Calculate"
+            onclick="calculate()"
+          />
+        </div>
+        <div class="result white-text">
+          <br />
+          <p id="totalMarks"></p>
+          <p id="grade"></p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
